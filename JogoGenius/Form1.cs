@@ -53,9 +53,10 @@ namespace JogoGenius
             btVermelho.Cursor = Cursors.Hand;
             btAzul.Cursor = Cursors.Hand;
 
-
-
-
+            btVerde.Enabled = false;
+            btAmarelo.Enabled = false;
+            btVermelho.Enabled = false;
+            btAzul.Enabled = false;
         }
 
 
@@ -189,7 +190,7 @@ namespace JogoGenius
                 HabilitaDesabilitaBotao(false);
                 nivel = 0;
                 lbNivel.Text = "";
-                MessageBox.Show("Sequência incorreta! Fim de jogo!");
+                MessageBox.Show("Sequï¿½ncia incorreta! Fim de jogo!");
 
             }
         }
