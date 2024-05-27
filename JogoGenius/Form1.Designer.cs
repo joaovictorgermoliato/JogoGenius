@@ -37,12 +37,14 @@
             lbNivel = new Label();
             btIniciar = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
+            btCiano = new Button();
+            btRoxo = new Button();
             SuspendLayout();
             // 
             // btVerde
             // 
             btVerde.FlatStyle = FlatStyle.Flat;
-            btVerde.Location = new Point(93, 71);
+            btVerde.Location = new Point(130, 71);
             btVerde.Name = "btVerde";
             btVerde.Size = new Size(106, 105);
             btVerde.TabIndex = 0;
@@ -53,7 +55,7 @@
             // 
             btAmarelo.BackColor = SystemColors.Control;
             btAmarelo.FlatStyle = FlatStyle.Flat;
-            btAmarelo.Location = new Point(218, 71);
+            btAmarelo.Location = new Point(255, 71);
             btAmarelo.Name = "btAmarelo";
             btAmarelo.Size = new Size(108, 105);
             btAmarelo.TabIndex = 1;
@@ -63,7 +65,7 @@
             // btAzul
             // 
             btAzul.FlatStyle = FlatStyle.Flat;
-            btAzul.Location = new Point(218, 195);
+            btAzul.Location = new Point(255, 195);
             btAzul.Name = "btAzul";
             btAzul.Size = new Size(108, 103);
             btAzul.TabIndex = 3;
@@ -73,7 +75,7 @@
             // btVermelho
             // 
             btVermelho.FlatStyle = FlatStyle.Flat;
-            btVermelho.Location = new Point(95, 195);
+            btVermelho.Location = new Point(132, 195);
             btVermelho.Name = "btVermelho";
             btVermelho.Size = new Size(104, 103);
             btVermelho.TabIndex = 2;
@@ -83,10 +85,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16F);
-            label1.Location = new Point(116, 339);
+            label1.Font = new Font("Segoe UI", 20F);
+            label1.Location = new Point(186, 339);
             label1.Name = "label1";
-            label1.Size = new Size(73, 30);
+            label1.Size = new Size(91, 37);
             label1.TabIndex = 4;
             label1.Text = "Nível :";
             label1.Click += label1_Click;
@@ -94,18 +96,18 @@
             // lbNivel
             // 
             lbNivel.AutoSize = true;
-            lbNivel.Font = new Font("Segoe UI", 16F);
-            lbNivel.Location = new Point(218, 339);
+            lbNivel.Font = new Font("Segoe UI", 20F);
+            lbNivel.Location = new Point(322, 339);
             lbNivel.Name = "lbNivel";
-            lbNivel.Size = new Size(0, 30);
+            lbNivel.Size = new Size(0, 37);
             lbNivel.TabIndex = 5;
             // 
             // btIniciar
             // 
             btIniciar.Font = new Font("Segoe UI", 16F);
-            btIniciar.Location = new Point(146, 394);
+            btIniciar.Location = new Point(255, 399);
             btIniciar.Name = "btIniciar";
-            btIniciar.Size = new Size(126, 50);
+            btIniciar.Size = new Size(108, 50);
             btIniciar.TabIndex = 6;
             btIniciar.Text = "Iniciar";
             btIniciar.UseVisualStyleBackColor = true;
@@ -116,11 +118,34 @@
             timer1.Interval = 250;
             timer1.Tick += timer1_Tick;
             // 
+            // btCiano
+            // 
+            btCiano.FlatStyle = FlatStyle.Flat;
+            btCiano.Location = new Point(383, 195);
+            btCiano.Name = "btCiano";
+            btCiano.Size = new Size(108, 103);
+            btCiano.TabIndex = 8;
+            btCiano.UseVisualStyleBackColor = true;
+            btCiano.Click += bt_Click;
+            // 
+            // btRoxo
+            // 
+            btRoxo.BackColor = SystemColors.Control;
+            btRoxo.FlatStyle = FlatStyle.Flat;
+            btRoxo.Location = new Point(383, 71);
+            btRoxo.Name = "btRoxo";
+            btRoxo.Size = new Size(108, 105);
+            btRoxo.TabIndex = 7;
+            btRoxo.UseVisualStyleBackColor = false;
+            btRoxo.Click += bt_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(420, 519);
+            ClientSize = new Size(640, 523);
+            Controls.Add(btCiano);
+            Controls.Add(btRoxo);
             Controls.Add(btIniciar);
             Controls.Add(lbNivel);
             Controls.Add(label1);
@@ -146,5 +171,7 @@
         private Label lbNivel;
         private Button btIniciar;
         private System.Windows.Forms.Timer timer1;
+        private Button btCiano;
+        private Button btRoxo;
     }
 }

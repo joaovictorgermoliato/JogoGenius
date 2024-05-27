@@ -1,4 +1,5 @@
 using System.Drawing;
+using System.Media;
 
 namespace JogoGenius
 {
@@ -19,12 +20,16 @@ namespace JogoGenius
         string corAmareloPadrao = "192; 192; 0";
         string corVermelhoPadrao = "DarkRed";
         string corAzulPadrao = "DarkBlue";
+        string corCianoPadrao = "#17A589";
+        string corRoxoPadrao = "#8E44AD";
 
 
         string corVerdePiscando = "LightGreen";
         string corAmareloPiscando = "#FFFF99";
         string corVermelhoPiscando = "#F50E00";
         string corAzulPiscando = "LightBlue";
+        string corCianoPiscando = "#A3E4D7";
+        string corRoxoPiscando = "#D2B4DE";
 
 
 
@@ -36,23 +41,33 @@ namespace JogoGenius
             btAmarelo.BackColor = ColorTranslator.FromHtml(corAmareloPadrao);
             btVermelho.BackColor = ColorTranslator.FromHtml(corVermelhoPadrao);
             btAzul.BackColor = ColorTranslator.FromHtml(corAzulPadrao);
+            btCiano.BackColor = ColorTranslator.FromHtml(corCianoPadrao);
+            btRoxo.BackColor = ColorTranslator.FromHtml(corRoxoPadrao);
 
 
             btVerde.FlatAppearance.MouseOverBackColor = ColorTranslator.FromHtml(corVerdePadrao);
             btAmarelo.FlatAppearance.MouseOverBackColor = ColorTranslator.FromHtml(corAmareloPadrao);
             btVermelho.FlatAppearance.MouseOverBackColor = ColorTranslator.FromHtml(corVermelhoPadrao);
             btAzul.FlatAppearance.MouseOverBackColor = ColorTranslator.FromHtml(corAzulPadrao);
+            btCiano.FlatAppearance.MouseOverBackColor = ColorTranslator.FromHtml(corCianoPadrao);
+            btRoxo.FlatAppearance.MouseOverBackColor = ColorTranslator.FromHtml(corRoxoPadrao);
+
 
             btVerde.FlatAppearance.MouseDownBackColor = ColorTranslator.FromHtml(corVerdePiscando);
             btAmarelo.FlatAppearance.MouseDownBackColor = ColorTranslator.FromHtml(corAmareloPiscando);
             btVermelho.FlatAppearance.MouseDownBackColor = ColorTranslator.FromHtml(corVermelhoPiscando);
             btAzul.FlatAppearance.MouseDownBackColor = ColorTranslator.FromHtml(corAzulPiscando);
+            btCiano.FlatAppearance.MouseDownBackColor = ColorTranslator.FromHtml(corCianoPiscando);
+            btRoxo.FlatAppearance.MouseDownBackColor = ColorTranslator.FromHtml(corRoxoPiscando);
+
 
             btVerde.Cursor = Cursors.Hand;
             btAmarelo.Cursor = Cursors.Hand;
             btVermelho.Cursor = Cursors.Hand;
             btAzul.Cursor = Cursors.Hand;
-
+            btCiano.Cursor = Cursors.Hand;
+            btRoxo.Cursor = Cursors.Hand;
+        
 
 
 
@@ -78,7 +93,7 @@ namespace JogoGenius
         private void GerarSequencia()
         {
             Random random = new Random();
-            int num = random.Next(0, 4);
+            int num = random.Next(0,6);
 
             Button bt = null;
 
@@ -97,11 +112,17 @@ namespace JogoGenius
                 case 3:
                     bt = btAzul;
                     break;
+                case 4:
+                    bt = btCiano;
+                    break;
+                case 5:
+                    bt = btRoxo;
+                    break;
 
 
 
             }
-
+           
             sequencia.Add(bt);
         }
 
@@ -125,6 +146,10 @@ namespace JogoGenius
                     corPiscando = ColorTranslator.FromHtml(corVermelhoPiscando);
                 else if (sequencia[i] == btAzul)
                     corPiscando = ColorTranslator.FromHtml(corAzulPiscando);
+                else if (sequencia[i] == btCiano)
+                    corPiscando = ColorTranslator.FromHtml(corCianoPiscando);
+                else if (sequencia[i] == btRoxo)
+                    corPiscando = ColorTranslator.FromHtml(corRoxoPiscando);
 
                 timer1.Start();
 
@@ -143,7 +168,8 @@ namespace JogoGenius
             btAmarelo.Enabled = habilita;
             btVermelho.Enabled = habilita;
             btAzul.Enabled = habilita;
-
+            btCiano.Enabled = habilita;
+            btRoxo.Enabled = habilita;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -189,7 +215,7 @@ namespace JogoGenius
                 HabilitaDesabilitaBotao(false);
                 nivel = 0;
                 lbNivel.Text = "";
-                MessageBox.Show("Sequência incorreta! Fim de jogo!");
+                MessageBox.Show("Você errou a sequência! Fim de jogo!");
 
             }
         }
@@ -202,6 +228,7 @@ namespace JogoGenius
             lbNivel.ForeColor = Color.White;
             btIniciar.BackColor = Color.LightGreen;
             btIniciar.ForeColor = Color.Black;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -210,3 +237,4 @@ namespace JogoGenius
         }
     }
 }
+
