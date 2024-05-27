@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JogoGenius", "JogoGenius\JogoGenius.csproj", "{F15D3167-0A22-4563-BEC1-7499C456B9B6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Som do jogo", "Som do jogo", "{597E1C70-1B2B-40C0-A570-D5E610B97211}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Downloads\Som do joguinho Genius\musicadefundo.mp3 = ..\..\..\Downloads\Som do joguinho Genius\musicadefundo.mp3
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
