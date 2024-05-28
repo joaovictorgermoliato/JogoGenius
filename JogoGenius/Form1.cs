@@ -8,6 +8,7 @@ namespace JogoGenius
 
 
 
+
         int sequenciaSelecionada = -1;
         int sequenciaAtual = 0;
         int aux = 0;
