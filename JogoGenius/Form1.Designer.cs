@@ -143,7 +143,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(640, 523);
+            ClientSize = new Size(621, 515);
             Controls.Add(btCiano);
             Controls.Add(btRoxo);
             Controls.Add(btIniciar);
