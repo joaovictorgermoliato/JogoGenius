@@ -44,7 +44,7 @@
             // btVerde
             // 
             btVerde.FlatStyle = FlatStyle.Flat;
-            btVerde.Location = new Point(130, 71);
+            btVerde.Location = new Point(125, 77);
             btVerde.Name = "btVerde";
             btVerde.Size = new Size(106, 105);
             btVerde.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             btAmarelo.BackColor = SystemColors.Control;
             btAmarelo.FlatStyle = FlatStyle.Flat;
-            btAmarelo.Location = new Point(255, 71);
+            btAmarelo.Location = new Point(250, 77);
             btAmarelo.Name = "btAmarelo";
             btAmarelo.Size = new Size(108, 105);
             btAmarelo.TabIndex = 1;
@@ -65,7 +65,7 @@
             // btAzul
             // 
             btAzul.FlatStyle = FlatStyle.Flat;
-            btAzul.Location = new Point(255, 195);
+            btAzul.Location = new Point(250, 201);
             btAzul.Name = "btAzul";
             btAzul.Size = new Size(108, 103);
             btAzul.TabIndex = 3;
@@ -75,7 +75,7 @@
             // btVermelho
             // 
             btVermelho.FlatStyle = FlatStyle.Flat;
-            btVermelho.Location = new Point(132, 195);
+            btVermelho.Location = new Point(127, 201);
             btVermelho.Name = "btVermelho";
             btVermelho.Size = new Size(104, 103);
             btVermelho.TabIndex = 2;
@@ -86,7 +86,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F);
-            label1.Location = new Point(186, 339);
+            label1.Location = new Point(181, 345);
             label1.Name = "label1";
             label1.Size = new Size(91, 37);
             label1.TabIndex = 4;
@@ -97,7 +97,7 @@
             // 
             lbNivel.AutoSize = true;
             lbNivel.Font = new Font("Segoe UI", 20F);
-            lbNivel.Location = new Point(322, 339);
+            lbNivel.Location = new Point(317, 345);
             lbNivel.Name = "lbNivel";
             lbNivel.Size = new Size(0, 37);
             lbNivel.TabIndex = 5;
@@ -105,7 +105,7 @@
             // btIniciar
             // 
             btIniciar.Font = new Font("Segoe UI", 16F);
-            btIniciar.Location = new Point(255, 399);
+            btIniciar.Location = new Point(250, 405);
             btIniciar.Name = "btIniciar";
             btIniciar.Size = new Size(108, 50);
             btIniciar.TabIndex = 6;
@@ -121,7 +121,7 @@
             // btCiano
             // 
             btCiano.FlatStyle = FlatStyle.Flat;
-            btCiano.Location = new Point(383, 195);
+            btCiano.Location = new Point(378, 201);
             btCiano.Name = "btCiano";
             btCiano.Size = new Size(108, 103);
             btCiano.TabIndex = 8;
@@ -132,7 +132,7 @@
             // 
             btRoxo.BackColor = SystemColors.Control;
             btRoxo.FlatStyle = FlatStyle.Flat;
-            btRoxo.Location = new Point(383, 71);
+            btRoxo.Location = new Point(378, 77);
             btRoxo.Name = "btRoxo";
             btRoxo.Size = new Size(108, 105);
             btRoxo.TabIndex = 7;
