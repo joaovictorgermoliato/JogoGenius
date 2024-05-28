@@ -59,7 +59,7 @@ namespace JogoGenius
             btCiano.FlatAppearance.MouseDownBackColor = ColorTranslator.FromHtml(corCianoPiscando);
             btRoxo.FlatAppearance.MouseDownBackColor = ColorTranslator.FromHtml(corRoxoPiscando);
 
-
+             
             btVerde.Cursor = Cursors.Hand;
             btAmarelo.Cursor = Cursors.Hand;
             btVermelho.Cursor = Cursors.Hand;
