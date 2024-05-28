@@ -43,7 +43,7 @@ namespace JogoGenius
             btCiano.BackColor = ColorTranslator.FromHtml(corCianoPadrao);
             btRoxo.BackColor = ColorTranslator.FromHtml(corRoxoPadrao);
              
-
+             
             btVerde.FlatAppearance.MouseOverBackColor = ColorTranslator.FromHtml(corVerdePadrao);
             btAmarelo.FlatAppearance.MouseOverBackColor = ColorTranslator.FromHtml(corAmareloPadrao);
             btVermelho.FlatAppearance.MouseOverBackColor = ColorTranslator.FromHtml(corVermelhoPadrao);
